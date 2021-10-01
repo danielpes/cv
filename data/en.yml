@@ -1,0 +1,134 @@
+info:
+  name: Daniel de Paula
+  dob: '1991-03-22'
+  position: Full-Stack Developer
+  nationality: Brazilian
+  status: Married
+
+contact:
+  country: France (remote)
+  phone: '+33 07 64 36 89 38'
+
+links:
+  - type: linkedin
+    link: /in/danieldepaula
+    url: https://linkedin.com/in/danieldepaula
+  - type: github
+    link: danielpes
+    url: https://github.com/danielpes
+  - type: stackoverflow
+    link: daniel-de-paula
+    url: https://stackoverflow.com/users/3864822/daniel-de-paula
+
+languages:
+  - name: Portuguese
+    score: 100
+  - name: English
+    score: 90
+  - name: French
+    score: 90
+  - name: Spanish
+    score: 50
+
+skills:
+  - name: Apache Spark
+    score: 90
+  - name: Scala
+    score: 80
+  - name: SQL
+    score: 70
+  - name: Git
+    score: 70
+  - name: Unix
+    score: 60
+  - name: Web (front-end)
+    score: 60
+  - name: Python
+    score: 50
+  - name: Java
+    score: 50
+  - name: Node.js
+    score: 50
+  - name: Mach. Learning
+    score: 40
+
+experience:
+  - 
+    company: Ecole Polytechnique
+    place: Palaiseau
+    country: France
+    role: Big Data Engineer
+    start: '2016-06'
+    end: null
+    description: >
+      As part of the Data Science Initiative, I work in a project in partnership
+      with the French national health insurance fund (CNAMTS), being one of the
+      main engineers implementing a big data pipeline in Spark for processing
+      over 3TBs of raw medical data into features for ML models.
+  -
+    company: Icaro Tech
+    place: Campinas, SP
+    country: Brazil
+    role: R&D Engineer
+    start: '2015-01'
+    end: '2016-06'
+    description: >
+      At first, I worked with data analysis and visualization with R and SQL,
+      then I started contributing to the company’s products development with
+      code, management tasks and decision making.
+  -
+    company: Icaro Tech
+    place: Campinas, SP
+    country: Brazil
+    role: Intern
+    start: '2014-01'
+    end: '2014-12'
+    description: >
+      I started as a presales intern, working with price estimation and PoCs;
+      then I changed to R&D to focus on data analysis and visualization.
+  -
+    company: Lince
+    place: Sao Carlos, SP
+    role: Intern
+    country: Brazil
+    start: '2012-01'
+    end: '2012-08'
+    description: >
+      I used Javascript, CSS and HTML to contribute to the creation of the tool
+      WebNCL, a web player for NCL multimedia documents.
+
+education:
+  -
+    institution: Univ. Federal de Sao Carlos
+    place: Sao Carlos, SP
+    program: Computer Engineering
+    country: Brazil
+    start: '2009-01'
+    end: '2014-12'
+    description: >
+      Final project in machine learning for telecom.
+  -
+    institution: University of Birmingham
+    place: Birmingham
+    program: Exchange Program
+    country: UK
+    start: '2009-01'
+    end: '2014-12'
+    description: >
+      One year as an exchange student with a final project in robotics.
+
+interests:
+  - Movies and series
+  - Chess
+  - Video games
+  - Board games
+  - Racket sports
+  - Precision sports and games
+
+recommendation:
+  - author: Fernando Moraes
+  - role: Former R&D Manager at Icaro Tech
+  - details: (Full text on LinkedIn)
+  - quote: >
+      I believe Daniel is one of the most talented and enjoyable persons I've 
+      ever worked with. I definitely recommend him to any team.
