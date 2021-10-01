@@ -1,0 +1,13 @@
+{
+  "name": "base-template",
+  "version": "1.0.0",
+  "description": "My base template repository for npm-based projects.",
+  "repository": "git@github.com:danielpes/base-template.git",
+  "author": "Daniel de Paula <contact@danielpes.me>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@danielpes/coding-standards": "^1.1.1",
+    "@danielpes/eslint-config": "^1.1.0"
+  }
+}
