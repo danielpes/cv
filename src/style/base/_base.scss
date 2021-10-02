@@ -30,14 +30,14 @@ html {
 }
 
 body {
+  width: $page-width;
   color: $c-text;
   font: 400 1rem $base-font-family, sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
 #page {
-  width: $page-width;
   height: 100%;
   background-color: $white;
   margin: 0 auto;

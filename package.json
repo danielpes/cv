@@ -12,6 +12,7 @@
     "build:pug": "yarn load-config && pug src/view/index.pug -P -O /tmp/config.json -o public",
     "build:sass": "sass src/style/main.scss public/css/main.css",
     "build": "yarn copy:assets && yarn build:pug && yarn build:sass",
+    "release": "yarn build && cp -R public/ docs",
     "watch:pug": "yarn build:pug -w",
     "watch:sass": "yarn build:sass -w",
     "watch": "yarn copy:assets && concurrently 'yarn:watch:*'"
