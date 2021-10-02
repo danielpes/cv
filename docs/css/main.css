@@ -1,0 +1,317 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  body {
+    width: 64em;
+    height: 90.514285696em;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .noprint {
+    visibility: hidden;
+  }
+}
+html {
+  font-size: 16px;
+  line-height: 1.2;
+  background: linear-gradient(120deg, white, #efefef) no-repeat fixed bottom;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+body {
+  width: 64em;
+  color: #424242;
+  font: 400 1rem "Montserrat", sans-serif;
+  margin: auto;
+  padding: 0;
+}
+
+#page {
+  height: 100%;
+  background-color: white;
+  margin: 0 auto;
+  display: grid;
+  box-shadow: 2px 2px 5px 1px #ccc;
+}
+@media print {
+  #page {
+    box-shadow: none;
+  }
+}
+
+p {
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6em;
+}
+
+p.quote {
+  margin-left: 2em;
+  padding-left: 0.7em;
+  border-left: 3px solid #bdbdbd;
+  color: #757575;
+  font-style: italic;
+}
+
+b {
+  font-weight: bolder;
+}
+
+#main-grid a {
+  color: #424242;
+  text-decoration: none;
+}
+#main-grid a:link,
+#main-grid a:hover,
+#main-grid a:visited,
+#main-grid a:active {
+  color: #424242;
+  text-decoration: none;
+}
+
+.icon {
+  height: 1.2em;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  color: #424242;
+}
+
+.sec-title {
+  color: #2079c7;
+  font-family: "Montserrat";
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-bottom: 1.2em;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+@media print {
+  .sec-title {
+    color: #212121;
+  }
+}
+
+[v-cloak] {
+  visibility: hidden;
+}
+
+#main-grid {
+  display: grid;
+  background-color: white;
+  padding: 4rem;
+  column-gap: 3.5em;
+  row-gap: 3.5em;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 63% 1fr;
+}
+
+#header {
+  display: grid;
+  column-gap: inherit;
+  grid-column: 1/3;
+  grid-template-columns: inherit;
+  grid-template-rows: auto auto;
+}
+
+#footer {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer > :not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+#footer .gh-repo {
+  display: flex;
+  align-items: center;
+}
+#footer .gh-repo svg {
+  height: 1em;
+  width: 1em;
+}
+@media print {
+  #footer {
+    display: none;
+  }
+}
+
+.main-col {
+  display: grid;
+  row-gap: 3em;
+  align-content: space-between;
+}
+
+#right-col {
+  font-size: 0.9em;
+}
+
+#header-title {
+  color: #212121;
+  font: bold 2.5em "Merriweather";
+  margin: 0;
+}
+
+#header-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header-about #header-subtitle {
+  font-size: 1.4em;
+  margin-bottom: 0.5rem;
+}
+#header-about .info {
+  color: #616161;
+}
+
+#contact {
+  grid-template-rows: 1fr 1fr;
+}
+#contact .email {
+  display: flex;
+  align-items: center;
+}
+#contact .email svg {
+  height: 0.9em;
+  width: 0.9em;
+  margin: 0 2px;
+  color: #616161;
+}
+
+.icon-grid {
+  display: grid;
+  align-content: space-between;
+  align-items: center;
+  column-gap: 0.7em;
+  row-gap: 0.3em;
+  grid-template-columns: 1.1em auto;
+}
+
+#jobs {
+  font-size: 1rem;
+}
+
+#edu {
+  font-size: 0.9rem;
+}
+
+#prj .item-header {
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+}
+#prj .item-header .print-only {
+  display: none;
+  justify-self: end;
+  font-style: italic;
+}
+@media print {
+  #prj .item-header .print-only {
+    display: inline;
+  }
+}
+
+.item {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 0.75em;
+}
+.item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.item-header {
+  display: grid;
+  align-items: end;
+}
+
+.item-title {
+  font-size: 1.1em;
+}
+.item-title .fa.lg {
+  font-size: 1.2em;
+}
+.item-title .fa.sm {
+  font-size: 0.8em;
+}
+
+.date {
+  font-family: "Montserrat";
+  font-size: 0.95em;
+  color: #757575;
+}
+.date > .period {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.role {
+  font-style: italic;
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+#interests .interest-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2em;
+  row-gap: 0.5em;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  column-gap: 0.7em;
+  row-gap: 0.7em;
+  align-items: baseline;
+}
+.skills-list .icon {
+  font-size: 0.7em;
+  margin-right: 0.4em;
+  color: #616161;
+}
+
+.skill-name {
+  justify-self: end;
+}
+
+.skill-bar-inner {
+  border: 1px solid #757575;
+  height: 6px;
+  background-color: #757575;
+}
+
+#links-list {
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 0.5em;
+}
+
+#acc-content {
+  display: grid;
+  row-gap: 1em;
+}
+#acc-content b {
+  font-weight: bolder;
+}
+
+#rec-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  row-gap: 1em;
+}
+
+.quote-author {
+  justify-self: end;
+  text-align: right;
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
