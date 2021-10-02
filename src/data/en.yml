@@ -79,10 +79,10 @@ experience:
     period: 'July 2016 - Jun 2018'
     duration: '2 years'
     description: >
-      As part of the Data Science Initiative, I work in a project in partnership
-      with the French national health insurance fund (CNAMTS), being one of the
-      main engineers implementing a big data pipeline in Spark for processing
-      over 3TBs of raw medical data into features for ML models.
+      As part of the Data Science Initiative, I worked in a project in
+      partnership with the French national health insurance fund (CNAMTS). I was
+      part of a team of 3 engineers implementing a big data pipeline in Spark
+      for processing over 3TBs of raw medical data into features for ML models.
   -
     company: Icaro Tech
     place: Campinas, SP

@@ -107,17 +107,17 @@ head
             each interest in interests
               span= interest
 
-        //- //- Recommendation
-        //- #rec
-        //-   span.sec-title Recommendation
-        //-   #rec-content
-        //-     p.quote= recommendation.quote
-        //-     .quote-author
-        //-       b= recommendation.author.name
-        //-       br
-        //-       span= recommendation.author.role
-        //-       br
-        //-       span= recommendation.details
+        //- Recommendation
+        #rec
+          h2.sec-title Recommendation
+          #rec-content
+            p.quote= recommendation.quote
+            .quote-author
+              b= recommendation.author.name
+              br
+              span= recommendation.author.role
+              br
+              span= recommendation.details
 
   #footer
     span Created with web technologies.

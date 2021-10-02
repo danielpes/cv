@@ -8,15 +8,15 @@
   justify-content: space-between;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
+  row-gap: 0.75em;
   &:not(:last-child) {
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
   }
 }
 
 .item-header {
   display: grid;
   align-items: end;
-  margin-bottom: 0.5em;
 }
 
 .item-title {
@@ -32,7 +32,6 @@
 }
 
 .date {
-  margin-bottom: 0.5em;
   font-family: $base-font-family;
   font-size: 0.95em;
   color: $grey;
