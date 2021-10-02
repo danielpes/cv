@@ -11,13 +11,8 @@ head
   meta(name='viewport' content='width=device-width')
   title Daniel de Paula&apos;s CV
   link(type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,700|Montserrat:400,400i,600|Lato:400,400i,900|Open+Sans:400,400i,600,700')
-  link(type='text/css' rel='stylesheet' href='font-awesome/css/font-awesome.min.css')
-  link(type='text/css' rel='stylesheet' href='materialize/materialize.min.css')
   link(type='text/css' rel='stylesheet' href='css/main.css')
-  script(type='text/javascript' src='js/include/jquery-3.2.1.min.js')
-  script(type='text/javascript' src='materialize/materialize.min.js')
-  script(type='text/javascript' src='js/include/vue.min.js')
-#page
+#page(style='font-family: Lato')
   #main-grid
     #header
       #header-title
@@ -71,16 +66,16 @@ head
         span.sec-title Skills
         .skills-list
         each skill in skills
-          span.skill-name #{skill.name}
+          span.skill-name= skill.name
           .skill-bar-outer
-            .skill-bar-inner(:style='updateSkillBar(skill.level)')
+            .skill-bar-inner(style=`width: ${skill.score}%`)
       #langs
         span.sec-title Languages
         .skills-list
         each lang in languages
-          span.skill-name #{lang.name}
+          span.skill-name= lang.name
           .skill-bar-outer
-            .skill-bar-inner(:style='updateSkillBar(lang.level)')
+            .skill-bar-inner(style=`width: ${lang.score}%`)
       #links
         span.sec-title Online
         #links-list.icon-grid
