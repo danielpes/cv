@@ -119,9 +119,15 @@ head
               br
               span= recommendation.details
 
-  #footer
-    span Created with web technologies.
-    span Last update: #{ new Intl.DateTimeFormat().format(new Date()) }
-    a(href="https://github.com/danielpes/cv") Source
+  footer#footer
+    a.github-button(
+      target="_blank",
+      href="https://github.com/danielpes/cv",
+      data-size="large",
+      aria-label="Check danielpes/cv on GitHub"
+    ) danielpes/cv
+    i Hand-crafted with web technologies
+    i Last updated on #{ new Intl.DateTimeFormat('en-gb', {dateStyle: "medium"}).format(new Date()) }
 
 script(type="text/javascript", src="js/main.js")
+script(async, defer, src="https://buttons.github.io/buttons.js")

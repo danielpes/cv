@@ -1,8 +1,21 @@
 #footer {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-style: italic;
+
+  & > :not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+
+  .gh-repo {
+    display: flex;
+    align-items: center;
+    svg {
+      height: 1em;
+      width: 1em;
+    }
+  }
 
   @media print {
     display: none;
