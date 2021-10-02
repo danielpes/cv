@@ -54,13 +54,24 @@ skills:
     score: 40
 
 experience:
+  -
+    company: Busbud
+    place: Montreal, QC
+    country: Canada
+    role: Full-Stack Engineer
+    start: '2018-06'
+    end: '2021-09'
+    description: >
+      Working as a full-stack developer, I contributed on a daily basis to
+      several parts of the stack using many technologies such as React, Redux, Node.js, Typescript,
+      Fastly VCL, SQL, Kubernetes, RabbitMQ and more.
   - 
     company: Ecole Polytechnique
     place: Palaiseau
     country: France
     role: Big Data Engineer
     start: '2016-06'
-    end: null
+    end: '2018-06'
     description: >
       As part of the Data Science Initiative, I work in a project in partnership
       with the French national health insurance fund (CNAMTS), being one of the
@@ -107,7 +118,7 @@ education:
     start: '2009-01'
     end: '2014-12'
     description: >
-      Final project in machine learning for telecom.
+      Five years program with a final project in machine learning for telecom.
   -
     institution: University of Birmingham
     place: Birmingham
@@ -127,9 +138,10 @@ interests:
   - Precision sports and games
 
 recommendation:
-  - author: Fernando Moraes
-  - role: Former R&D Manager at Icaro Tech
-  - details: (Full text on LinkedIn)
-  - quote: >
+  quote: >
       I believe Daniel is one of the most talented and enjoyable persons I've 
       ever worked with. I definitely recommend him to any team.
+  author:
+    name: Fernando Moraes
+    role: Former R&D Manager at Icaro Tech
+  details: (Full text on LinkedIn)

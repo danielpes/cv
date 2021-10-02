@@ -42,6 +42,10 @@ body {
   margin: 0 auto;
   display: grid;
   box-shadow: 2px 2px 5px 1px #ccc;
+
+  @media print {
+    box-shadow: none;
+  }
 }
 
 p {

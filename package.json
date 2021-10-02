@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "load-config": "js-yaml src/data/en.yml > /tmp/config.json",
-    "copy:assets": "cp -R assets public",
+    "copy:assets": "cp -R assets/ public",
     "build:pug": "yarn load-config && pug src/view/index.pug -P -O /tmp/config.json -o public",
     "build:sass": "sass src/style/main.scss public/css/main.css",
     "build": "yarn copy:assets && yarn build:pug && yarn build:sass",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@danielpes/coding-standards": "^1.1.1",
     "@danielpes/eslint-config": "^1.1.0",
+    "@prettier/plugin-pug": "^1.16.7",
     "concurrently": "^6.3.0",
     "js-yaml": "^4.1.0",
     "pug-cli": "^1.0.0-alpha6",
