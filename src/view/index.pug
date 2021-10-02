@@ -9,30 +9,30 @@ head
     gtag('config', 'UA-105990489-2');
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width')
-  title Daniel de Paula&apos;s CV
+  title Daniel de Paula - CV
   link(type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,700|Montserrat:400,400i,600|Lato:400,400i,900|Open+Sans:400,400i,600,700')
   link(type='text/css' rel='stylesheet' href='css/main.css')
-#page(style='font-family: Lato')
-  #main-grid
-    #header
-      #header-title
+div#page(style='font-family: Lato')
+  div#main-grid
+    div#header
+      div#header-title
         span #{info.name}
       div
         // empty div
-      #header-about
+      div#header-about
         span#header-subtitle= info.position
         span.info #{info.nationality} | #{info.age} years old | #{info.status}
-      #contact.icon-grid
+      div#contact.icon-grid
         i.fa-icon.fa.fa-fw.fa-home(style='font-size: 1.5em')
         span= contact.country
         i.fa-icon.fa.fa-fw.fa-phone(style='font-size: 1.4em')
         span= contact.email
-    #left-col.main-col
-      #jobs
+    div#left-col.main-col
+      div#jobs
         span.sec-title Experience
         each exp in experience
-          .item
-            .item-header
+          div.item
+            div.item-header
               div
                 span.item-title
                   b #{exp.company}
@@ -43,11 +43,11 @@ head
               if exp.duration 
                 | #{exp.duration}
             p #{exp.description}
-      #edu
+      div#edu
         span.sec-title Education
         each edu in education
-          .item
-            .item-header
+          div.item
+            div.item-header
               div
                 span.item-title
                   b #{edu.institution}
@@ -58,43 +58,43 @@ head
               if edu.duration
                 | #{edu.duration}
             p #{edu.description}
-      #hobbies
+      div#hobbies
         span.sec-title Interests
         span#hob-list= interests.join(" | ")
-    #right-col.main-col
-      #skills
+    div#right-col.main-col
+      div#skills
         span.sec-title Skills
-        .skills-list
+        div.skills-list
         each skill in skills
           span.skill-name= skill.name
-          .skill-bar-outer
-            .skill-bar-inner(style=`width: ${skill.score}%`)
-      #langs
+          div.skill-bar-outer
+            div.skill-bar-inner(style=`width: ${skill.score}%`)
+      div#langs
         span.sec-title Languages
-        .skills-list
+        div.skills-list
         each lang in languages
           span.skill-name= lang.name
-          .skill-bar-outer
-            .skill-bar-inner(style=`width: ${lang.score}%`)
-      #links
+          div.skill-bar-outer
+            div.skill-bar-inner(style=`width: ${lang.score}%`)
+      div#links
         span.sec-title Online
-        #links-list.icon-grid
+        div#links-list.icon-grid
           a(href='http://linkedin.com/in/danieldepaula')
             span linkedin.com/in/danieldepaula
           a(href='http://github.com/danielpes')
             span github.com/danielpes
           a(href='http://stackoverflow.com/users/3864822/')
             span stackoverflow.com/users/3864822/
-      #rec
+      div#rec
         span.sec-title Recommendation
-        #rec-content
+        div#rec-content
           p.quote
             | &ldquo;I believe Daniel is one of the
             | most talented and enjoyable
             | persons I&apos;ve ever worked with. I
             | definitely recommend him to
             | any team&rdquo;
-          .quote-author
+          div.quote-author
             span
               b Fernando Moraes
             br
