@@ -1,5 +1,6 @@
 info:
   name: Daniel de Paula
+  age: 30
   dob: '1991-03-22'
   position: Full-Stack Developer
   nationality: Brazilian
@@ -7,7 +8,7 @@ info:
 
 contact:
   country: France (remote)
-  phone: '+33 07 64 36 89 38'
+  email: contact (at) danielpes.me
 
 links:
   - type: linkedin

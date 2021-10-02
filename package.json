@@ -6,8 +6,22 @@
   "author": "Daniel de Paula <contact@danielpes.me>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "load-config": "js-yaml src/data/en.yml > /tmp/config.json",
+    "copy:assets": "cp -R assets public",
+    "build:pug": "yarn load-config && pug src/view/index.pug -P -O /tmp/config.json -o public",
+    "build:sass": "sass src/style/main.scss public/css/main.css",
+    "build": "yarn copy:assets && yarn build:pug && yarn build:sass",
+    "watch:pug": "yarn build:pug -w",
+    "watch:sass": "yarn build:sass -w",
+    "watch": "yarn copy:assets && concurrently 'yarn:watch:*'"
+  },
   "devDependencies": {
     "@danielpes/coding-standards": "^1.1.1",
-    "@danielpes/eslint-config": "^1.1.0"
+    "@danielpes/eslint-config": "^1.1.0",
+    "concurrently": "^6.3.0",
+    "js-yaml": "^4.1.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.42.1"
   }
 }

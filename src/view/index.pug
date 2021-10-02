@@ -1,0 +1,109 @@
+doctype html
+head
+  // Global Site Tag (gtag.js) - Google Analytics
+  script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-105990489-2')
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+    gtag('config', 'UA-105990489-2');
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width')
+  title Daniel de Paula&apos;s CV
+  link(type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Merriweather:400,400i,600,700|Montserrat:400,400i,600|Lato:400,400i,900|Open+Sans:400,400i,600,700')
+  link(type='text/css' rel='stylesheet' href='font-awesome/css/font-awesome.min.css')
+  link(type='text/css' rel='stylesheet' href='materialize/materialize.min.css')
+  link(type='text/css' rel='stylesheet' href='css/main.css')
+  script(type='text/javascript' src='js/include/jquery-3.2.1.min.js')
+  script(type='text/javascript' src='materialize/materialize.min.js')
+  script(type='text/javascript' src='js/include/vue.min.js')
+#page
+  #main-grid
+    #header
+      #header-title
+        span #{info.name}
+      div
+        // empty div
+      #header-about
+        span#header-subtitle= info.position
+        span.info #{info.nationality} | #{info.age} years old | #{info.status}
+      #contact.icon-grid
+        i.fa-icon.fa.fa-fw.fa-home(style='font-size: 1.5em')
+        span= contact.country
+        i.fa-icon.fa.fa-fw.fa-phone(style='font-size: 1.4em')
+        span= contact.email
+    #left-col.main-col
+      #jobs
+        span.sec-title Experience
+        each exp in experience
+          .item
+            .item-header
+              div
+                span.item-title
+                  b #{exp.company}
+                span.loc | #{exp.place} | #{exp.country}
+              span.role #{exp.role}
+            span.date
+              span.period #{exp.period}
+              if exp.duration 
+                | #{exp.duration}
+            p #{exp.description}
+      #edu
+        span.sec-title Education
+        each edu in education
+          .item
+            .item-header
+              div
+                span.item-title
+                  b #{edu.institution}
+                span.loc | #{edu.place} | #{edu.country}
+              span.role #{edu.role}
+            span.date
+              span.period #{edu.period}
+              if edu.duration
+                | #{edu.duration}
+            p #{edu.description}}
+      #hobbies
+        span.sec-title Interests
+        span#hob-list= interests.join(" | ")
+    #right-col.main-col
+      #skills
+        span.sec-title Skills
+        .skills-list
+        each skill in skills
+          span.skill-name #{skill.name}
+          .skill-bar-outer
+            .skill-bar-inner(:style='updateSkillBar(skill.level)')
+      #langs
+        span.sec-title Languages
+        .skills-list
+        each lang in languages
+          span.skill-name #{lang.name}
+          .skill-bar-outer
+            .skill-bar-inner(:style='updateSkillBar(lang.level)')
+      #links
+        span.sec-title Online
+        #links-list.icon-grid
+          a(href='http://linkedin.com/in/danieldepaula')
+            span linkedin.com/in/danieldepaula
+          a(href='http://github.com/danielpes')
+            span github.com/danielpes
+          a(href='http://stackoverflow.com/users/3864822/')
+            span stackoverflow.com/users/3864822/
+      #rec
+        span.sec-title Recommendation
+        #rec-content
+          p.quote
+            | &ldquo;I believe Daniel is one of the
+            | most talented and enjoyable
+            | persons I&apos;ve ever worked with. I
+            | definitely recommend him to
+            | any team&rdquo;
+          .quote-author
+            span
+              b Fernando Moraes
+            br
+            span Former R&amp;D Manager at Icaro Tech
+            br
+            span (Full text on LinkedIn)
+script(type='text/javascript' src='js/main.js')
