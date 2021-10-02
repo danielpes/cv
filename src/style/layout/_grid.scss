@@ -1,8 +1,7 @@
 #main-grid {
   display: grid;
   background-color: white;
-  border: 4rem solid white;
-  border-top: 2.5em solid white; // set smaller top border to compensate for top bar
+  padding: 3rem 4rem;
   grid-column-gap: 3.5em;
   grid-row-gap: 3.5em;
   grid-template-rows: auto 1fr;

@@ -29,9 +29,11 @@ head
           span#header-subtitle= info.position
           span.info #{ info.nationality } | #{ info.age } years old | #{ info.status }
         #contact.icon-grid
-          img(src="icons/place.svg")
+          svg.icon
+            use(href="icons/place.svg#root")
           span= contact.country
-          img(src="icons/email.svg")
+          svg.icon
+            use(href="icons/envelope.svg#root")
           span= contact.email
 
       #left-col.main-col
@@ -97,10 +99,16 @@ head
         #links
           span.sec-title Online
           #links-list.icon-grid
+            svg.icon
+              use(href="icons/linkedin.svg#root")
             a(href="http://linkedin.com/in/danieldepaula")
               span linkedin.com/in/danieldepaula
+            svg.icon
+              use(href="icons/github.svg#root")
             a(href="http://github.com/danielpes")
               span github.com/danielpes
+            svg.icon
+              use(href="icons/stack-overflow.svg#root")
             a(href="http://stackoverflow.com/users/3864822/")
               span stackoverflow.com/users/3864822/
 

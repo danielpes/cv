@@ -4,11 +4,13 @@
 }
 
 #header-about {
-  display: grid;
-  align-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   #header-subtitle {
     font-size: 1.4em;
+    margin-bottom: 0.5rem;
   }
 
   .info {
