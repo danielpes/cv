@@ -85,7 +85,7 @@ b {
   width: 100%;
   justify-self: center;
   align-self: center;
-  color: $grey-dark;
+  color: $grey-darker;
 }
 
 .sec-title {
@@ -93,6 +93,8 @@ b {
   font-family: $base-font-family;
   font-weight: bolder;
   font-size: 1.2rem;
+  margin-bottom: 1em;
+  margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   @media print {

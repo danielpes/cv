@@ -1,3 +1,14 @@
 #contact {
   grid-template-rows: 1fr 1fr;
+
+  .email {
+    display: flex;
+    align-items: center;
+    svg {
+      height: 0.9em;
+      width: 0.9em;
+      margin: 0 2px;
+      color: $grey-dark;
+    }
+  }
 }

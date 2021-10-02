@@ -17,14 +17,12 @@ head
   )
   link(type="text/css", rel="stylesheet", href="css/main.css")
 
-#root(style="font-family: Lato")
+#root(style="font-family: 'Open Sans'")
   #page
     #main-grid
       #header
-        #header-title
-          span #{ info.name }
+        h1#header-title= info.name
         div
-          // empty div
         #header-about
           span#header-subtitle= info.position
           span.info #{ info.nationality } | #{ info.age } years old | #{ info.status }
@@ -34,95 +32,92 @@ head
           span= contact.country
           svg.icon
             use(href="icons/envelope.svg#root")
-          span= contact.email
+          span.email
+            span= contact.email.username
+            svg
+              use(href="icons/at.svg#root")
+            span= contact.email.domain
 
       #left-col.main-col
         //- Experience
         #jobs
-          span.sec-title Experience
+          h2.sec-title Experience
           each exp in experience
             .item
               .item-header
                 div
                   span.item-title
-                    b #{ exp.company }
-                  span.loc | #{ exp.place } | #{ exp.country }
-                span.role #{ exp.role }
+                    b= exp.company
+                  span.loc= ` | ${exp.place} | ${exp.country}`
+                span.role= exp.role
               span.date
-                span.period #{ exp.period }
+                span.period= exp.period
                 if exp.duration
-                  | #{ exp.duration }
-              p #{ exp.description }
+                  span= ` | ${exp.duration}`
+              p= exp.description
 
         //- Education
         #edu
-          span.sec-title Education
+          h2.sec-title Education
           each edu in education
             .item
               .item-header
                 div
                   span.item-title
-                    b #{ edu.institution }
-                  span.loc | #{ edu.place } | #{ edu.country }
-                span.role #{ edu.program }
+                    b= edu.institution
+                  span.loc= ` | ${edu.place} | ${edu.country}`
+                span.role= edu.program
               span.date
-                span.period #{ edu.period }
+                span.period= edu.period
                 if edu.duration
                   | #{ edu.duration }
-              p #{ edu.description }
-
-        //- Interests
-        #interests
-          span.sec-title Interests
-          span#hob-list= interests.join(' | ')
+              p= edu.description
 
       #right-col.main-col
         //- Skills
         #skills
-          span.sec-title Skills
+          h2.sec-title Skills
           .skills-list
-          each skill in skills
-            span.skill-name= skill.name
-            .skill-bar-outer
+            each skill in skills
+              span.skill-name= skill.name
               .skill-bar-inner(style=`width: ${skill.score}%`)
 
         //- Languages
         #langs
-          span.sec-title Languages
+          h2.sec-title Languages
           .skills-list
-          each lang in languages
-            span.skill-name= lang.name
-            .skill-bar-outer
+            each lang in languages
+              span.skill-name= lang.name
               .skill-bar-inner(style=`width: ${lang.score}%`)
 
         //- Online
         #links
-          span.sec-title Online
+          h2.sec-title Online
           #links-list.icon-grid
-            svg.icon
-              use(href="icons/linkedin.svg#root")
-            a(href="http://linkedin.com/in/danieldepaula")
-              span linkedin.com/in/danieldepaula
-            svg.icon
-              use(href="icons/github.svg#root")
-            a(href="http://github.com/danielpes")
-              span github.com/danielpes
-            svg.icon
-              use(href="icons/stack-overflow.svg#root")
-            a(href="http://stackoverflow.com/users/3864822/")
-              span stackoverflow.com/users/3864822/
+            each link in links
+              svg.icon
+                use(href=`icons/${link.type}.svg#root`)
+              a(href=link.url)
+                span= link.label
 
-        //- Recommendation
-        #rec
-          span.sec-title Recommendation
-          #rec-content
-            p.quote= recommendation.quote
-            .quote-author
-              b= recommendation.author.name
-              br
-              span= recommendation.author.role
-              br
-              span= recommendation.details
+        //- Interests
+        #interests
+          h2.sec-title Interests
+          .interest-grid
+            each interest in interests
+              span= interest
+
+        //- //- Recommendation
+        //- #rec
+        //-   span.sec-title Recommendation
+        //-   #rec-content
+        //-     p.quote= recommendation.quote
+        //-     .quote-author
+        //-       b= recommendation.author.name
+        //-       br
+        //-       span= recommendation.author.role
+        //-       br
+        //-       span= recommendation.details
 
   #footer
     span Created with web technologies.

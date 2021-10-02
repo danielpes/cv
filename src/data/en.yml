@@ -8,17 +8,19 @@ info:
 
 contact:
   country: France (remote)
-  email: contact (at) danielpes.me
+  email: 
+    domain: danielpes.me
+    username: contact
 
 links:
   - type: linkedin
-    link: /in/danieldepaula
+    label: linkedin.com/in/danieldepaula
     url: https://linkedin.com/in/danieldepaula
   - type: github
-    link: danielpes
+    label: github.com/danielpes
     url: https://github.com/danielpes
-  - type: stackoverflow
-    link: daniel-de-paula
+  - type: stack-overflow
+    label: stackoverflow.com/users/3864822
     url: https://stackoverflow.com/users/3864822/daniel-de-paula
 
 languages:
@@ -32,35 +34,37 @@ languages:
     score: 50
 
 skills:
-  - name: Apache Spark
+  - name: Javascript
+    score: 100
+  - name: React + Redux
     score: 90
-  - name: Scala
-    score: 80
+  - name: Typescript
+    score: 90
   - name: SQL
-    score: 70
+    score: 80
   - name: Git
+    score: 80
+  - name: Node.js
     score: 70
   - name: Unix
     score: 60
-  - name: Web (front-end)
+  - name: Kubernetes
+    score: 60
+  - name: Scala
     score: 60
   - name: Python
     score: 50
-  - name: Java
-    score: 50
-  - name: Node.js
-    score: 50
-  - name: Mach. Learning
-    score: 40
 
 experience:
   -
     company: Busbud
     place: Montreal, QC
     country: Canada
-    role: Full-Stack Engineer
-    start: '2018-06'
+    role: Full-Stack Developer
+    start: '2018-07'
     end: '2021-09'
+    period: 'Jul 2018 - Sep 2021'
+    duration: '3 years'
     description: >
       Working as a full-stack developer, I contributed on a daily basis to
       several parts of the stack using many technologies such as React, Redux, Node.js, Typescript,
@@ -72,6 +76,8 @@ experience:
     role: Big Data Engineer
     start: '2016-06'
     end: '2018-06'
+    period: 'July 2016 - Jun 2018'
+    duration: '2 years'
     description: >
       As part of the Data Science Initiative, I work in a project in partnership
       with the French national health insurance fund (CNAMTS), being one of the
@@ -84,6 +90,8 @@ experience:
     role: R&D Engineer
     start: '2015-01'
     end: '2016-06'
+    period: 'Jan 2015 - Jun 2016'
+    duration: '1.5 year'
     description: >
       At first, I worked with data analysis and visualization with R and SQL,
       then I started contributing to the company’s products development with
@@ -95,6 +103,8 @@ experience:
     role: Intern
     start: '2014-01'
     end: '2014-12'
+    period: 'Jan 2014 - Dec 2014'
+    duration: '1 year'
     description: >
       I started as a presales intern, working with price estimation and PoCs;
       then I changed to R&D to focus on data analysis and visualization.
@@ -105,6 +115,8 @@ experience:
     country: Brazil
     start: '2012-01'
     end: '2012-08'
+    period: 'Jan 2012 - Aug 2012'
+    duration: '8 months'
     description: >
       I used Javascript, CSS and HTML to contribute to the creation of the tool
       WebNCL, a web player for NCL multimedia documents.
@@ -117,6 +129,7 @@ education:
     country: Brazil
     start: '2009-01'
     end: '2014-12'
+    period: 'Jan 2009 - Dec 2014'
     description: >
       Five years program with a final project in machine learning for telecom.
   -
@@ -124,18 +137,21 @@ education:
     place: Birmingham
     program: Exchange Program
     country: UK
-    start: '2009-01'
-    end: '2014-12'
+    start: '2012-09'
+    end: '2012-08'
+    period: 'Sep 2012 - Aug 2013'
     description: >
       One year as an exchange student with a final project in robotics.
 
 interests:
-  - Movies and series
+  - Movies 
+  - TV series
+  - Technology
   - Chess
   - Video games
   - Board games
   - Racket sports
-  - Precision sports and games
+  - Precision games
 
 recommendation:
   quote: >

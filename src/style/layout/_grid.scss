@@ -2,12 +2,8 @@
   display: grid;
   background-color: white;
   padding: 3rem 4rem;
-  grid-column-gap: 3.5em;
-  grid-row-gap: 3.5em;
+  column-gap: 3.5em;
+  row-gap: 3.5em;
   grid-template-rows: auto 1fr;
   grid-template-columns: 63% 1fr;
-
-  @media print {
-    border-top: 4em solid white; // reset top border
-  }
 }

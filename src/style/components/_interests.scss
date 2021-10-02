@@ -1,9 +1,8 @@
 #interests {
-  font-size: 0.9em;
-  display: grid;
-
-  #hob-list {
-    margin-top: 1em;
-    text-align-last: justify;
+  .interest-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1em;
+    row-gap: 0.5em;
   }
 }
