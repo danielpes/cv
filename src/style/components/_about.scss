@@ -1,0 +1,17 @@
+#header-title {
+  color: $title-color;
+  font: bold 2.5em $title-font-family;
+}
+
+#header-about {
+  display: grid;
+  align-content: space-between;
+
+  #header-subtitle {
+    font-size: 1.4em;
+  }
+
+  .info {
+    color: $grey-dark;
+  }
+}

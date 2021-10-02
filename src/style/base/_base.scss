@@ -1,0 +1,97 @@
+@import "_variables.scss";
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    width: $page-width;
+    height: $page-height;
+    -webkit-print-color-adjust: exact;
+  }
+  .noprint {
+    visibility: hidden;
+  }
+}
+
+html {
+  font-size: $base-font-size;
+  background: linear-gradient(
+      120deg,
+      lighten($grey-lightest, 8%),
+      $grey-lightest
+    )
+    no-repeat fixed bottom;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+body {
+  color: $c-text;
+  font: 400 1rem $base-font-family, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  width: $page-width;
+  height: 100%;
+  background-color: $white;
+  margin: 0 auto;
+  display: grid;
+  box-shadow: 2px 2px 5px 1px #ccc;
+}
+
+p {
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6em;
+}
+
+p.quote {
+  margin-left: 2em;
+  padding-left: 0.7em;
+  border-left: 3px solid $grey-lighter;
+  color: $grey;
+  font-style: italic;
+}
+
+b {
+  font-weight: bolder;
+}
+
+#main-grid a {
+  color: $c-text;
+  text-decoration: none;
+
+  &:link,
+  &:hover,
+  &:visited,
+  &:active {
+    color: $c-text;
+    text-decoration: none;
+  }
+}
+
+.fa-icon {
+  justify-self: center;
+}
+
+.sec-title {
+  color: $c-section;
+  font-family: $base-font-family;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  @media print {
+    color: $title-color;
+  }
+}
+
+// For Vue.js
+[v-cloak] {
+  visibility: hidden;
+}

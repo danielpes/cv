@@ -1,0 +1,17 @@
+#prj .item-header {
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+
+  .print-only {
+    display: none;
+    justify-self: end;
+    font-style: italic;
+  }
+
+  @media print {
+    .print-only {
+      font-size: 0.9em;
+      display: inline;
+    }
+  }
+}

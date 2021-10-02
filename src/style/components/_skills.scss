@@ -1,0 +1,31 @@
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.5em;
+  margin-top: 1em;
+  align-items: baseline;
+
+  .fa-icon {
+    font-size: 0.7em;
+    margin-right: 0.4em;
+    color: $grey-dark;
+  }
+}
+
+.skill-name {
+  justify-self: end;
+}
+
+.skill-bar-outer {
+  border: 1px solid $grey;
+  justify-self: stretch;
+  height: 7px;
+  background-color: white;
+}
+
+.skill-bar-inner {
+  border: 1px solid $grey;
+  height: 100%;
+  background-color: $grey;
+}

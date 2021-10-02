@@ -1,0 +1,47 @@
+// exp = jobs + edu + projects
+@import "_jobs.scss";
+@import "_edu.scss";
+@import "_prj.scss";
+
+.item {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.item-header {
+  display: grid;
+  align-items: end;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.item-title {
+  font-size: 1.1em;
+
+  .fa.lg {
+    font-size: 1.2em;
+  }
+
+  .fa.sm {
+    font-size: 0.8em;
+  }
+}
+
+.date {
+  margin-bottom: 0.5em;
+  font-family: $base-font-family;
+  font-size: 0.95em;
+  color: $grey;
+  > .period {
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+}
+
+.role {
+  font-style: italic;
+  grid-column: 2 / 3;
+  justify-self: end;
+}
