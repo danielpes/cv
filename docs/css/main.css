@@ -148,7 +148,7 @@ b {
 }
 
 #right-col {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 #header-title {
@@ -260,32 +260,32 @@ b {
 
 #interests .interest-grid {
   display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 2em;
-  row-gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
 .skills-list {
   display: grid;
-  grid-template-columns: 40% 1fr;
-  column-gap: 0.7em;
-  row-gap: 0.7em;
-  align-items: baseline;
-}
-.skills-list .icon {
-  font-size: 0.7em;
-  margin-right: 0.4em;
-  color: #616161;
+  grid-template-columns: auto auto;
+  column-gap: 1em;
+  row-gap: 1em;
 }
 
-.skill-name {
+.lang-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.lang-name {
   justify-self: end;
 }
 
-.skill-bar-inner {
-  border: 1px solid #757575;
-  height: 6px;
-  background-color: #757575;
+.lang-level {
+  font-weight: bold;
+  color: #616161;
 }
 
 #links-list {
