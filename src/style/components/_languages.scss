@@ -1,0 +1,15 @@
+.lang-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.lang-name {
+  justify-self: end;
+}
+
+.lang-level {
+  font-weight: bold;
+  color: $grey-dark;
+}

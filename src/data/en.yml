@@ -24,35 +24,33 @@ links:
 
 languages:
   - name: Portuguese
-    score: 100
+    level: Native
   - name: English
-    score: 90
+    level: Fluent
   - name: French
-    score: 90
+    level: Fluent
   - name: Spanish
-    score: 50
+    level: Intermediary
 
 skills:
-  - name: Javascript
+  - name: JS + TS
     score: 100
+  - name: Teamwork
   - name: React + Redux
     score: 90
-  - name: Typescript
-    score: 90
+  - name: Versatility
   - name: SQL
     score: 80
-  - name: Git
-    score: 80
+  - name: Attention to details
   - name: Node.js
     score: 70
-  - name: Unix
-    score: 60
+  - name: Conscientiousness
   - name: Kubernetes
     score: 60
+  - name: Autonomy
   - name: Scala
     score: 60
-  - name: Python
-    score: 50
+  - name: Leadership
 
 experience:
   -

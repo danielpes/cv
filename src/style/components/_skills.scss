@@ -1,23 +1,6 @@
 .skills-list {
   display: grid;
-  grid-template-columns: 40% 1fr;
-  column-gap: 0.7em;
-  row-gap: 0.7em;
-  align-items: baseline;
-
-  .icon {
-    font-size: 0.7em;
-    margin-right: 0.4em;
-    color: $grey-dark;
-  }
-}
-
-.skill-name {
-  justify-self: end;
-}
-
-.skill-bar-inner {
-  border: 1px solid $grey;
-  height: 6px;
-  background-color: $grey;
+  grid-template-columns: auto auto;
+  column-gap: 1em;
+  row-gap: 1em;
 }
