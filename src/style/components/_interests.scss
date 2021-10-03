@@ -1,8 +1,8 @@
 #interests {
   .interest-grid {
     display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 2em;
-    row-gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
   }
 }

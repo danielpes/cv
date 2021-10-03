@@ -79,16 +79,15 @@ head
           h2.sec-title Skills
           .skills-list
             each skill in skills
-              span.skill-name= skill.name
-              .skill-bar-inner(style=`width: ${skill.score}%`)
+              span= skill.name
 
         //- Languages
         #langs
           h2.sec-title Languages
-          .skills-list
+          .lang-list
             each lang in languages
-              span.skill-name= lang.name
-              .skill-bar-inner(style=`width: ${lang.score}%`)
+              span.lang-name= lang.name
+              span.lang-level= lang.level
 
         //- Online
         #links
