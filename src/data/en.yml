@@ -63,9 +63,10 @@ experience:
     period: 'Jul 2018 - Sep 2021'
     duration: '3 years'
     description: >
-      Working as a full-stack developer, I contributed on a daily basis to
-      several parts of the stack using many technologies such as React, Redux, Node.js, Typescript,
-      Fastly VCL, SQL, Kubernetes, RabbitMQ and more.
+      For three years, I contributed to many parts of the stack using React, 
+      Redux, Node.js, Typescript and more. The projects I participated include: 
+      a full website redesign, a smooth migration from Heroku to Google Cloud 
+      and a revamp of the observability tools for the front-end stack.
   - 
     company: Ecole Polytechnique
     place: Palaiseau
@@ -90,9 +91,8 @@ experience:
     period: 'Jan 2015 - Jun 2016'
     duration: '1.5 year'
     description: >
-      At first, I worked with data analysis and visualization with R and SQL,
-      then I started contributing to the company’s products development with
-      code, management tasks and decision making.
+      At first, I worked in data analysis and visualization projects with SQL,
+      then I moved to the development of data visualization products.
   -
     company: Icaro Tech
     place: Campinas, SP
@@ -103,7 +103,7 @@ experience:
     period: 'Jan 2014 - Dec 2014'
     duration: '1 year'
     description: >
-      I started as a presales intern, working with price estimation and PoCs;
+      I started as a tech-sales intern, working with price estimation and PoCs;
       then I changed to R&D to focus on data analysis and visualization.
   -
     company: Lince
