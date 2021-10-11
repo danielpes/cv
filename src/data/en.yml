@@ -1,13 +1,13 @@
 info:
   name: Daniel de Paula
   age: 30
-  dob: '1991-03-22'
+  dob: "1991-03-22"
   position: Full-Stack Engineer
   nationality: Brazilian | EU Citizen
 
 contact:
   country: France (remote)
-  email: 
+  email:
     domain: danielpes.me
     username: contact
 
@@ -53,95 +53,88 @@ skills:
   - name: Leadership
 
 experience:
-  -
-    company: Busbud
+  - company: Busbud
     place: Montreal, QC
     country: Canada
-    role: Full-Stack Engineer
-    start: '2018-07'
-    end: '2021-09'
-    period: 'Jul 2018 - Sep 2021'
-    duration: '3 years'
+    role: Senior Full-Stack Engineer
+    start: "2018-07"
+    end: "2021-09"
+    period: "Jul 2018 - Sep 2021"
+    duration: "3 years"
     description: >
       For three years, I contributed to many parts of the stack using React, 
       Redux, Node.js, Typescript and more. The projects I participated include: 
       a full website redesign, a smooth migration from Heroku to Google Cloud 
       and a revamp of the observability tools for the front-end stack.
-  - 
-    company: Ecole Polytechnique
+  - company: Ecole Polytechnique
     place: Palaiseau
     country: France
     role: Big Data Engineer
-    start: '2016-06'
-    end: '2018-06'
-    period: 'July 2016 - Jun 2018'
-    duration: '2 years'
+    start: "2016-06"
+    end: "2018-06"
+    period: "July 2016 - Jun 2018"
+    duration: "2 years"
     description: >
-      As part of the Data Science Initiative, I worked in a project in
-      partnership with the French national health insurance fund (CNAMTS). I was
-      part of a team of 3 engineers implementing a big data pipeline in Spark
-      for processing over 3TBs of raw medical data into features for ML models.
-  -
-    company: Icaro Tech
+      As part of the Data Science Initiative, working in partnership with the
+      French national health insurance fund (CNAMTS), I was part of a team of 3
+      engineers implementing a big data pipeline in Scala + Spark for processing
+      over 3TBs of raw medical data into features for ML models.
+  - company: Icaro Tech
     place: Campinas, SP
     country: Brazil
     role: R&D Engineer
-    start: '2015-01'
-    end: '2016-06'
-    period: 'Jan 2015 - Jun 2016'
-    duration: '1.5 year'
+    start: "2015-01"
+    end: "2016-06"
+    period: "Jan 2015 - Jun 2016"
+    duration: "1.5 year"
     description: >
       At first, I worked in data analysis and visualization projects with SQL,
       then I moved to the development of data visualization products.
-  -
-    company: Icaro Tech
+  - company: Icaro Tech
     place: Campinas, SP
     country: Brazil
     role: Intern
-    start: '2014-01'
-    end: '2014-12'
-    period: 'Jan 2014 - Dec 2014'
-    duration: '1 year'
+    start: "2014-01"
+    end: "2014-12"
+    period: "Jan 2014 - Dec 2014"
+    duration: "1 year"
     description: >
       I started as a tech-sales intern, working with price estimation and PoCs;
       then I changed to R&D to focus on data analysis and visualization.
-  -
-    company: Lince
+  - company: Lince
     place: Sao Carlos, SP
     role: Intern
     country: Brazil
-    start: '2012-01'
-    end: '2012-08'
-    period: 'Jan 2012 - Aug 2012'
-    duration: '8 months'
+    start: "2012-01"
+    end: "2012-08"
+    period: "Jan 2012 - Aug 2012"
+    duration: "8 months"
     description: >
       I used Javascript, CSS and HTML to contribute to the creation of the tool
       WebNCL, a web player for NCL multimedia documents.
 
 education:
-  -
-    institution: Univ. Federal de Sao Carlos
+  - institution: Univ. Federal de Sao Carlos
     place: Sao Carlos, SP
     program: Computer Engineering
     country: Brazil
-    start: '2009-01'
-    end: '2014-12'
-    period: 'Jan 2009 - Dec 2014'
+    start: "2009-01"
+    end: "2014-12"
+    period: "Jan 2009 - Dec 2014"
     description: >
       Five years program with a final project in machine learning for telecom.
-  -
-    institution: University of Birmingham
+  - institution: University of Birmingham
     place: Birmingham
     program: Exchange Program
     country: UK
-    start: '2012-09'
-    end: '2012-08'
-    period: 'Sep 2012 - Aug 2013'
+    start: "2012-09"
+    end: "2012-08"
+    period: "Sep 2012 - Aug 2013"
     description: >
       One year as an exchange student with a final project in robotics.
 
 interests:
-  - Movies 
+  - Movies
   - TV series
   - Technology
   - Chess
@@ -152,8 +145,8 @@ interests:
 
 recommendation:
   quote: >
-      I believe Daniel is one of the most talented and enjoyable persons I've 
-      ever worked with. I definitely recommend him to any team.
+    I believe Daniel is one of the most talented and enjoyable persons I've 
+    ever worked with. I definitely recommend him to any team.
   author:
     name: Fernando Moraes
     role: Former R&D Manager at Icaro Tech
