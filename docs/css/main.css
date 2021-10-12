@@ -90,11 +90,6 @@ b {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
-@media print {
-  .sec-title {
-    color: #212121;
-  }
-}
 
 [v-cloak] {
   visibility: hidden;
