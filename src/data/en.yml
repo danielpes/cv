@@ -89,18 +89,18 @@ experience:
     duration: "1.5 year"
     description: >
       At first, I worked in data analysis and visualization projects with SQL,
-      then I moved to the development of data visualization products.
+      then I moved to product development using Node.js and Scala with Spark.
   - company: Icaro Tech
     place: Campinas, SP
     country: Brazil
-    role: Intern
+    role: Full-Time Intern
     start: "2014-01"
     end: "2014-12"
     period: "Jan 2014 - Dec 2014"
     duration: "1 year"
     description: >
-      I started as a tech-sales intern, working with price estimation and PoCs;
-      then I changed to R&D to focus on data analysis and visualization.
+      Experience with dashboard customization in Javascript, introductory
+      machine learning and data analysis/visualization with R and SQL.
   - company: Lince
     place: Sao Carlos, SP
     role: Intern
@@ -110,8 +110,8 @@ experience:
     period: "Jan 2012 - Aug 2012"
     duration: "8 months"
     description: >
-      I used Javascript, CSS and HTML to contribute to the creation of the tool
-      WebNCL, a web player for NCL multimedia documents.
+      I used Javascript, CSS and HTML to contribute to the creation of WebNCL, 
+      a web player for NCL multimedia documents.
 
 education:
   - institution: Univ. Federal de Sao Carlos

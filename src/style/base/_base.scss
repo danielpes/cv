@@ -97,9 +97,6 @@ b {
   margin-top: 0;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  @media print {
-    color: $title-color;
-  }
 }
 
 // For Vue.js
